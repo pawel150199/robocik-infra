@@ -1,4 +1,4 @@
-output "server_ipv4" {
+output "floating_ip_address" {
     description = "Server IP"
-    value = hcloud_server.robocik_server.ipv4_address
+    value = hcloud_floating_ip.master.ip_address
 }
